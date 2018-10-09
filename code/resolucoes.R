@@ -1,6 +1,6 @@
 #Nome: Bruna dos Santos Passerani
 
-#Resolução Lista de Exercicios
+#Resolu??o Lista de Exercicios
 #install.packages("packrat")
 
 #packrat::status()
@@ -21,6 +21,7 @@ install.packages("dplyr")
 install.packages("readxl")
 
 library(readxl)
+
 
 ma <- read_excel("data/exercicio1.xls")
 head(ma)
@@ -43,6 +44,9 @@ dvp <- read_excel("data/exercicio1.xls")
 head(dvp)
 
 desvio = sd(dvp$`Taxas de juros`)
+
+
+
 
 desvio
 
@@ -242,7 +246,7 @@ tabela
 eh <- read_excel("data/exercicio4.xls")
 head(eh)
 png(filename = "graphics/histoexercicio4.png", width = 480, height = 480)
-hist(eh$Salários, main = "Histograma", labels = TRUE,
+hist(eh$Sal?rios, main = "Histograma", labels = TRUE,
      col = c("blue", "green", "red", "lavender", "mistyrose",
              "cornsilk", "purple"),
      ylab = "FrequÃªncia",
@@ -274,7 +278,7 @@ ex6
 
 attach(ex6)
 names(ex6)
-Tipo <- `Nº pessoas`
+Tipo <- `N? pessoas`
 names(Tipo) <- Qualidade
 Tipo
 
@@ -284,19 +288,6 @@ dev.off()
 
 Tabela <- pareto.chart(Tipo)
 
-#Exercicio 8
-
-
-eh <- read_excel("data/exercicio4.xls")
-head(eh)
-png(filename = "graphics/histoexercicio4.png", width = 480, height = 480)
-hist(eh$Salários, main = "Histograma", labels = TRUE,
-     col = c("blue", "green", "red", "lavender", "mistyrose",
-             "cornsilk", "purple"),
-     ylab = "Frequencia",
-     xlab = "Dados")
-
-dev.off()
 
 #Exercicio 7
 
@@ -307,8 +298,8 @@ head(ex7)
 
 png(filename = "graphics/barrasexercicio7.png", width = 480, height = 480)
 
-barplot(ex7$Atendimento, names.arg = ex7$Áreas, col = c("blue","green", "red", "lavender", "black"),
-        legend.text = ex7$Áreas, sub = "GrÃ¡fico de Barras", main ="NÃºmero de Atendimentos")
+barplot(ex7$Atendimento, names.arg = ex7$?reas, col = c("blue","green", "red", "lavender", "black"),
+        legend.text = ex7$?reas, sub = "GrÃ¡fico de Barras", main ="NÃºmero de Atendimentos")
 dev.off()
 
 #Exercicio 8
@@ -355,7 +346,7 @@ ex9
 
 
 png(filename = "graphics/histoexercicio9.png", width = 600, height = 600)
-hist(ex9$Salários, main = "Histograma", labels = TRUE, nclass = 12,
+hist(ex9$Sal?rios, main = "Histograma", labels = TRUE, nclass = 12,
      col = c("blue", "green", "red", "lavender", "mistyrose",
              "cornsilk", "purple", "pink","green", "red", "lavender", "mistyrose",
              "cornsilk", "purple", "pink"),
